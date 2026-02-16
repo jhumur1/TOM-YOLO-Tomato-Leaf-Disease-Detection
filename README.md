@@ -27,7 +27,7 @@ This repository presents **TOM-YOLO**, an enhanced YOLOv12 framework for real-ti
 
 ## 🧠 Model Architecture
 
-![Architecture Diagram](images/TOM.png)
+![Architecture Diagram](TOM.png)
 ## 📊 Dataset
 
 This work uses the Tomato Leaf Diseases dataset hosted on Roboflow Universe:
