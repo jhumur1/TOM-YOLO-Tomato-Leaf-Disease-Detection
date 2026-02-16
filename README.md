@@ -11,23 +11,9 @@ This repository presents **TOM-YOLO**, an enhanced YOLOv12 framework for real-ti
 - A2C2f blocks for better feature representation  
 - SPPF module at layer 9 for multi-scale context  
 - C2f modules in backbone and neck for fine-grained lesion detection  
-- Custom detection head for nine tomato leaf disease categories  
+- Custom detection head for nine tomato leaf disease categories  |
 
-## 📊 Performance Metrics
 
-| Metric        | Value   |
-|---------------|---------|
-| Precision     | 87.5%   |
-| Recall        | 81.1%   |
-| F1-score      | 84.0%   |
-| mAP@50        | 90.4%   |
-| mAP@50-95     | 77.9%   |
-
----
-
-## 🧠 Model Architecture
-
-![Architecture Diagram](TOM.png)
 ## 📊 Dataset
 
 This work uses the Tomato Leaf Diseases dataset hosted on Roboflow Universe:
@@ -37,3 +23,36 @@ This work uses the Tomato Leaf Diseases dataset hosted on Roboflow Universe:
 > License: CC BY 4.0  
 > Classes: Early Blight, Healthy, Late Blight, Leaf Miner, Leaf Mold, Mosaic Virus, Septoria, Spider Mites, Yellow Leaf Curl Virus. :contentReference[oaicite:3]{index=3}
 
+The dataset was collected from **Roboflow**, containing 4,128 images across 9 tomato leaf disease classes:
+- Yellow leaf curl virus
+- Late blight
+- Leaf mold
+- Mosaic virus
+- Septoria
+- Healthy
+- Leaf miner
+- Early blight
+- Spider mites
+
+**Data Splitting:**
+- Training: 3,095 images (75%)
+- Validation: 633 images (15%)
+- Testing: 400 images (10%)
+
+**Preprocessing:**
+- Automatic orientation
+- Resizing to 448×448 pixels (stretch-to-fit)
+## 🧠 Model Architecture
+
+![Architecture Diagram](TOM.png)
+
+
+## 📊 Performance Metrics
+
+| Metric        | Value   |
+|---------------|---------|
+| Precision     | 87.5%   |
+| Recall        | 81.1%   |
+| F1-score      | 84.0%   |
+| mAP@50        | 90.4%   |
+| mAP@50-95     | 77.9%   
